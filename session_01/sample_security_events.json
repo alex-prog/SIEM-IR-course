@@ -1,0 +1,195 @@
+{
+  "timestamp": "2025-10-28T17:05:23Z",
+  "event_type": "authentication",
+  "result": "success",
+  "user": "jdoe",
+  "source_ip": "192.168.1.101",
+  "service": "ssh",
+  "hostname": "web-server-01"
+}
+{
+  "timestamp": "2025-10-28T17:05:45Z",
+  "event_type": "authentication",
+  "result": "failed",
+  "user": "admin",
+  "source_ip": "203.0.113.50",
+  "service": "ssh",
+  "hostname": "web-server-01",
+  "reason": "invalid_password"
+}
+{
+  "timestamp": "2025-10-28T17:06:12Z",
+  "event_type": "firewall",
+  "action": "DENY",
+  "source_ip": "203.0.113.51",
+  "dest_ip": "10.0.0.5",
+  "dest_port": 445,
+  "protocol": "TCP",
+  "device": "firewall-01"
+}
+{
+  "timestamp": "2025-10-28T17:06:34Z",
+  "event_type": "file_access",
+  "result": "success",
+  "user": "jsmith",
+  "file_path": "/var/www/html/config.php",
+  "action": "read",
+  "hostname": "web-server-02"
+}
+{
+  "timestamp": "2025-10-28T17:06:56Z",
+  "event_type": "authentication",
+  "result": "failed",
+  "user": "root",
+  "source_ip": "203.0.113.52",
+  "service": "ssh",
+  "hostname": "db-server-01",
+  "reason": "invalid_password"
+}
+{
+  "timestamp": "2025-10-28T17:07:18Z",
+  "event_type": "malware_detection",
+  "result": "blocked",
+  "user": "mwilson",
+  "file_name": "invoice_2025.exe",
+  "malware_family": "Trojan.Generic",
+  "hostname": "workstation-15",
+  "source": "email_attachment"
+}
+{
+  "timestamp": "2025-10-28T17:07:40Z",
+  "event_type": "firewall",
+  "action": "ALLOW",
+  "source_ip": "192.168.1.105",
+  "dest_ip": "8.8.8.8",
+  "dest_port": 53,
+  "protocol": "UDP",
+  "device": "firewall-01"
+}
+{
+  "timestamp": "2025-10-28T17:08:02Z",
+  "event_type": "authentication",
+  "result": "failed",
+  "user": "admin",
+  "source_ip": "203.0.113.53",
+  "service": "ssh",
+  "hostname": "web-server-01",
+  "reason": "invalid_password"
+}
+{
+  "timestamp": "2025-10-28T17:08:24Z",
+  "event_type": "authentication",
+  "result": "failed",
+  "user": "admin",
+  "source_ip": "203.0.113.53",
+  "service": "ssh",
+  "hostname": "web-server-01",
+  "reason": "invalid_password"
+}
+{
+  "timestamp": "2025-10-28T17:08:46Z",
+  "event_type": "authentication",
+  "result": "failed",
+  "user": "admin",
+  "source_ip": "203.0.113.53",
+  "service": "ssh",
+  "hostname": "web-server-01",
+  "reason": "invalid_password"
+}
+{
+  "timestamp": "2025-10-28T17:09:08Z",
+  "event_type": "service_start",
+  "result": "success",
+  "service_name": "apache2",
+  "user": "root",
+  "hostname": "web-server-03"
+}
+{
+  "timestamp": "2025-10-28T17:09:30Z",
+  "event_type": "firewall",
+  "action": "DENY",
+  "source_ip": "203.0.113.54",
+  "dest_ip": "10.0.0.10",
+  "dest_port": 3389,
+  "protocol": "TCP",
+  "device": "firewall-02"
+}
+{
+  "timestamp": "2025-10-28T17:09:52Z",
+  "event_type": "data_exfiltration_attempt",
+  "result": "blocked",
+  "user": "contractor01",
+  "destination": "dropbox.com",
+  "file_size_mb": 250,
+  "hostname": "workstation-22"
+}
+{
+  "timestamp": "2025-10-28T17:10:14Z",
+  "event_type": "authentication",
+  "result": "success",
+  "user": "dbadmin",
+  "source_ip": "10.0.0.25",
+  "service": "mysql",
+  "hostname": "db-server-01"
+}
+{
+  "timestamp": "2025-10-28T17:10:36Z",
+  "event_type": "privilege_escalation",
+  "result": "success",
+  "user": "jdoe",
+  "command": "sudo su -",
+  "hostname": "web-server-01"
+}
+{
+  "timestamp": "2025-10-28T17:10:58Z",
+  "event_type": "firewall",
+  "action": "DENY",
+  "source_ip": "203.0.113.55",
+  "dest_ip": "10.0.0.15",
+  "dest_port": 22,
+  "protocol": "TCP",
+  "device": "firewall-01"
+}
+{
+  "timestamp": "2025-10-28T17:11:20Z",
+  "event_type": "account_lockout",
+  "result": "locked",
+  "user": "temp_user",
+  "source_ip": "192.168.1.150",
+  "reason": "too_many_failed_attempts",
+  "hostname": "ad-controller-01"
+}
+{
+  "timestamp": "2025-10-28T17:11:42Z",
+  "event_type": "vpn_connection",
+  "result": "success",
+  "user": "remote_user1",
+  "source_ip": "98.76.54.32",
+  "vpn_gateway": "vpn-gateway-01"
+}
+{
+  "timestamp": "2025-10-28T17:12:04Z",
+  "event_type": "file_deletion",
+  "result": "success",
+  "user": "admin",
+  "file_path": "/var/log/auth.log",
+  "hostname": "web-server-01"
+}
+{
+  "timestamp": "2025-10-28T17:12:26Z",
+  "event_type": "ids_alert",
+  "signature": "SQL Injection Attempt",
+  "severity": "high",
+  "source_ip": "203.0.113.56",
+  "dest_ip": "10.0.0.20",
+  "device": "ids-sensor-01"
+}
+{
+  "timestamp": "2025-10-28T17:12:48Z",
+  "event_type": "usb_device_inserted",
+  "result": "blocked",
+  "user": "employee123",
+  "device_type": "usb_storage",
+  "hostname": "workstation-30",
+  "policy": "dlp_policy_01"
+}
